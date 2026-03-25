@@ -5,69 +5,106 @@
     <style>
         body {
             font-family: Arial;
-            margin: 40px;
-            background-color: #f4f4f4;
+            margin: 0;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            color: #333;
         }
-        h1 {
-            color: #2c3e50;
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            color: white;
         }
-        .section {
-            margin-bottom: 30px;
+
+        header h1 {
+            font-size: 40px;
         }
+
+        section {
+            padding: 40px;
+        }
+
         .card {
             background: white;
-            padding: 15px;
-            border-radius: 10px;
-            margin-top: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #2c3e50;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #2c3e50;
+            color: white;
         }
     </style>
 </head>
+
 <body>
 
-<h1>Irfana Sherief</h1>
-<p><b>Full Stack Developer (MERN)</b> | London, UK</p>
+<header>
+    <h1>Irfana Sherief</h1>
+    <p>Full Stack Developer (MERN)</p>
+</header>
 
-<div class="section">
-    <h2>About Me</h2>
+<section>
+    <h2>👋 About Me</h2>
     <div class="card">
         <p>I am a Full Stack Developer with a Master’s in Computing, experienced in building scalable web applications using MongoDB, Express.js, React.js, and Node.js.</p>
     </div>
-</div>
+</section>
 
-<div class="section">
-    <h2>Projects</h2>
+<section>
+    <h2>💻 Projects</h2>
+    <div class="projects">
 
-    <div class="card">
-        <h3>Smart E-Voting System</h3>
-        <p>Built a secure full-stack application with STV algorithm and authentication.</p>
+        <div class="card">
+            <h3>Smart E-Voting System</h3>
+            <p>Secure full-stack app with STV algorithm and authentication.</p>
+        </div>
+
+        <div class="card">
+            <h3>Internship Portal</h3>
+            <p>MERN stack platform to improve student engagement.</p>
+        </div>
+
+        <div class="card">
+            <h3>Stripe Job System</h3>
+            <p>Integrated Stripe payments into recruitment workflow.</p>
+        </div>
+
     </div>
+</section>
 
+<section>
+    <h2>🛠 Skills</h2>
     <div class="card">
-        <h3>Internship Portal</h3>
-        <p>Developed a MERN stack system for student engagement and management.</p>
+        <p>React.js • Node.js • MongoDB • Express.js • JavaScript • AWS</p>
     </div>
+</section>
 
-    <div class="card">
-        <h3>Stripe Job Application System</h3>
-        <p>Integrated Stripe website into recruitment workflow.</p>
-    </div>
-
-</div>
-
-<div class="section">
-    <h2>Skills</h2>
-    <div class="card">
-        <p>React.js | Node.js | MongoDB | Express.js | JavaScript | AWS</p>
-    </div>
-</div>
-
-<div class="section">
-    <h2>Contact</h2>
+<section>
+    <h2>📫 Contact</h2>
     <div class="card">
         <p>Email: irfanasherief1996@gmail.com</p>
         <p>LinkedIn: linkedin.com/in/irfanasherief96</p>
     </div>
-</div>
+</section>
+
+<footer>
+    <p>© 2026 Irfana Sherief</p>
+</footer>
 
 </body>
 </html>
